@@ -1,4 +1,5 @@
-# Imersão React 3ª Edição
+
+## Imersão React 3ª Edição | [Alura Online](https://www.alura.com.br/)
 
 Projeto desenvolvido durante a imersão react, durante os dias 12/07 até 16/07.
 
