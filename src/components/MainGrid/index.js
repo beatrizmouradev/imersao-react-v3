@@ -1,6 +1,6 @@
 
 import styled from 'styled-components';
-//MainGrid é o nome da classe
+//MainGrid é um componente da tag main
 const MainGrid = styled.main`
   width: 100%;
   grid-gap: 10px;

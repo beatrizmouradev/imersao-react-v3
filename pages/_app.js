@@ -1,6 +1,8 @@
-import { createGlobalStyle, ThemeProvider } from 'styled-components'
+import { createGlobalStyle, ThemeProvider } from 'styled-components' //biblioteca externa
 import {AlurakutStyles} from '../src/lib/AlurakutCommons';
 //estilos aplicados globalmente, vem por padrão, é usado como se fosse um componente
+
+//objeto global de estilo
 const GlobalStyle = createGlobalStyle`
   /*reset css vem por padrão no react e pode ser chamado com (*) */
   *{
@@ -22,12 +24,13 @@ const GlobalStyle = createGlobalStyle`
     min-height: 100vh;
     flex-direction: column;
   }
+  
   img{
     max-width: 100%;
     height: auto;
     display: block;
   }
-  ${AlurakutStyles}
+  ${AlurakutStyles} //concatenação com uma variável que recebe uma string
 
 `
 
