@@ -77,8 +77,10 @@ export default function Home() {
     'PabloMarins',
     'rafaballerini',
   ]
-  /*const [seguidores, setSeguidores] = React.useState([]);
+  const [seguidores, setSeguidores] = React.useState([]);
   // 0 - Pegar o array de dados do github 
+  // use effect sempre executa uma função. Interceptador de qualquer evento que ocorre
+  
   React.useEffect(function() {
     fetch('https://api.github.com/users/beatrizmouradev/followers')
     .then(function (respostaDoServidor) {
@@ -89,11 +91,9 @@ export default function Home() {
     })
   }, [])
 
-  console.log('seguidores antes do return', seguidores);
-
   // 1 - Criar um box que vai ter um map, baseado nos items do array
   // que pegamos do GitHub
-  */
+  
   return (
     <>
       <AlurakutMenu />
@@ -152,6 +152,7 @@ export default function Home() {
           </Box>
         </div>
         <div className="profileRelationsArea" style={{ gridArea: 'profileRelationsArea' }}>
+          <ProfileRelationsBox title="Seguidores" items={seguidores} />
           <ProfileRelationsBoxWrapper>
             <h2 className="smallTitle">
               Comunidades ({comunidades.length})
